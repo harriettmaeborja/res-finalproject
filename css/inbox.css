@@ -1,0 +1,102 @@
+
+body{
+  background-image: url(https://www.xmple.com/wallpaper/graph-paper-black-pink-grid-1440x2560-c2-000000-ff69b4-l2-5-245-a-30-f-20.svg);
+  background-size: cover;
+}
+
+/* ------------------------------------------------- */
+#wrapper  {
+  margin: auto;
+  max-width: 820px;
+}
+
+.message {
+  display: grid;
+  gap: 11px;
+  grid-template-areas: 
+     "box box box1"
+     "box box box2";  
+}
+
+header {
+  grid-area: box;
+  height: 400px;
+  padding: 80px;
+  background-color: #ffd1dc;
+  position: relative; top:100px;
+
+}
+.box h1,
+.box p {
+  padding: 5px;
+  text-align: center;
+  color: black;
+}
+.box a {
+  text-decoration: none;
+}
+.box1 p { 
+  color: black;
+  background-color: #ffd1dc;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+
+}
+.box1 {
+  height: 30px;
+  cursor: pointer;
+  position: relative; top:100px;
+
+}
+.box2 {
+  height: 60px;
+  font-size: 14px;
+  background-color: #ffd1dc;;
+  color: black;
+  padding: 10px;
+}
+.box1 i {
+  font-size: 24px;
+  color: black;
+}
+.icon{
+  font-size: 100px;
+  color: black  ;
+  text-align: center;
+}
+select{
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius:.25cm;
+}
+@media screen and (max-width: 780px){
+  .box1, .box2 {
+    display: none;
+  }
+ #wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 440px){
+  #wrapper {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+  }
+  header {
+    padding: 0px;
+    top: 8px;
+    height: 320px;
+  }
+  .icon{
+    font-size: 70px;
+    padding-top: 30px;
+  }
+}
+
