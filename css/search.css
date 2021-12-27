@@ -82,6 +82,9 @@ body{
 }
 
 @media screen and (max-width: 780px){
+  .search-box:hover > .search-txt{
+    width: 350px;
+}
 
 
 
